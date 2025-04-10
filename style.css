@@ -34,6 +34,16 @@ body p {
   background-size: cover;
   padding: 50px 15px;
 }
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(image/backblack.png);
+    background-size: cover;
+    padding: 50px 40px;
+  }
+}
 @media (min-width: 992px) {
   .navbar {
     display: flex;
@@ -93,6 +103,12 @@ body p {
 .hero p {
   margin: 20px 0 40px 0;
 }
+@media (min-width: 768px) {
+  .hero {
+    max-width: 100%;
+    padding: 50px 40px;
+  }
+}
 @media (min-width: 992px) {
   .hero {
     max-width: 45%;
@@ -120,6 +136,15 @@ body p {
   background-color: black;
   color: white;
 }
+@media (min-width: 768px) {
+  .personal-info1 {
+    display: grid;
+    padding: 50px 40px;
+    text-align: left;
+    background-color: black;
+    color: white;
+  }
+}
 @media (min-width: 992px) {
   .personal-info1 {
     max-width: 100%;
@@ -131,12 +156,19 @@ body p {
   }
 }
 .personal-info1 .image {
-  max-width: 400px;
-  transform: translate(-2rem);
+  max-width: 300px;
+  transform: translate(2rem);
+}
+@media (min-width: 768px) {
+  .personal-info1 .image {
+    max-width: 400px;
+    transform: translate(10rem);
+  }
 }
 @media (min-width: 992px) {
   .personal-info1 .image {
     max-width: 500px;
+    transform: translate(-2rem);
   }
 }
 .personal-info1 h3 {
@@ -157,6 +189,16 @@ body p {
   grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: 100px;
   gap: 10px;
+}
+@media (min-width: 768px) {
+  .personal-info1 .info {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+    gap: 20px;
+    text-align: left;
+  }
 }
 @media (min-width: 992px) {
   .personal-info1 .info {
@@ -222,6 +264,7 @@ body p {
 }
 .personal-info1 .social-icons img {
   width: 40px;
+  margin-top: 5px;
 }
 
 .personal-info2 {
@@ -230,6 +273,15 @@ body p {
   justify-content: center;
   max-width: 100%;
   padding: 50px 15px;
+}
+@media (min-width: 768px) {
+  .personal-info2 {
+    background-color: #f6a10c;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    padding: 50px 40px;
+  }
 }
 @media (min-width: 992px) {
   .personal-info2 {
@@ -258,10 +310,26 @@ body p {
   }
 }
 .personal-info2 .qualifications .qual-item {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   gap: 8px;
+}
+@media (min-width: 768px) {
+  .personal-info2 .qualifications .qual-item {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+}
+@media (min-width: 992px) {
+  .personal-info2 .qualifications .qual-item {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
 }
 .personal-info2 .qualifications .qual-item1 {
   font-weight: bold;
@@ -271,7 +339,17 @@ body p {
   background-color: #000;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 50px 15px;
+}
+@media (min-width: 768px) {
+  .key-skills {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 40px;
+  }
 }
 @media (min-width: 992px) {
   .key-skills {
@@ -287,6 +365,11 @@ body p {
 }
 .key-skills .skills-section {
   width: 100%;
+}
+@media (min-width: 768px) {
+  .key-skills .skills-section {
+    width: 100%;
+  }
 }
 @media (min-width: 992px) {
   .key-skills .skills-section {
@@ -310,18 +393,25 @@ body p {
   height: 100%;
 }
 .key-skills .image-section img {
-  max-width: 500px;
-  transform: translate(-11rem);
+  max-width: 300px;
+  align-items: center;
 }
 @media (min-width: 992px) {
   .key-skills .image-section img {
-    max-width: 550px;
-    transform: translate(-5rem);
+    max-width: 400px;
   }
 }
 
 .experience {
   padding: 50px 15px;
+}
+@media (min-width: 768px) {
+  .experience {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 50px 40px;
+  }
 }
 @media (min-width: 992px) {
   .experience {
@@ -335,6 +425,13 @@ body p {
 }
 .experience .experience-container {
   margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .experience .experience-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
 }
 @media (min-width: 992px) {
   .experience .experience-container {
@@ -389,6 +486,14 @@ body p {
   padding: 50px 15px;
   background-color: #000;
 }
+@media (min-width: 768px) {
+  .portfolio {
+    background-color: #000;
+    max-width: 100%;
+    text-align: center;
+    padding: 50px 40px;
+  }
+}
 @media (min-width: 992px) {
   .portfolio {
     background-color: #000;
@@ -408,6 +513,16 @@ body p {
   gap: 20px;
   padding: 20px;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .portfolio .portfolio-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
 }
 @media (min-width: 992px) {
   .portfolio .portfolio-container {
@@ -436,6 +551,15 @@ body p {
   color: #fff;
   padding: 50px 15px;
   text-align: center;
+}
+@media (min-width: 996px) {
+  .footer {
+    background-image: url(image/backblack.png);
+    background-size: cover;
+    color: #fff;
+    padding: 50px 40px;
+    text-align: center;
+  }
 }
 @media (min-width: 996px) {
   .footer {
